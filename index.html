@@ -21,7 +21,7 @@
 3、在提交代码时附带自己的简历, 方便我们精确的匹配到您<br>
 
 <br><span style="font-weight: 600;color: red;">如何提交答案</span><br>
-请您尽快完成并连同简历以姓名命名并打包，回复到<a href="mailto:superchao.wc@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">superchao.wc@alibaba-inc.com</a>，方便的话在boss直聘上再回复一下，感谢您的配合。 <br>
+请您尽快完成并连同简历以姓名命名并打包，回复到<a id="mail" href="mailto:superchao.wc@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">superchao.wc@alibaba-inc.com</a>，方便的话在boss直聘上再回复一下，感谢您的配合。 <br>
 
 
 <br><b>公司简介</b><br>
@@ -34,4 +34,20 @@
 <a href="http://www.iwshang.com/Post/Default/Index/pid/261343.html">银泰拿下1000万数字会员，从绿皮火车到高铁时代，这就是新零售速度</a> <br>
 
 </body>
+<script type="text/javascript">
+  function getParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+  }
+  var owner = getParam(o);
+  var node = document.getElementById('mail');
+  if (owner == 'c') {
+    node.href = "mailto:zhenggang.czg@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复";
+    node.innertText = "zhenggang.czg@alibaba-inc.com";
+  } else if (owner == 's') {
+    node.href = "mailto:shipeng.sp@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复";
+    node.innertText = "shipeng.sp@alibaba-inc.com";
+  }
+</script>
 </html>
