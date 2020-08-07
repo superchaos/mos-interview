@@ -26,6 +26,11 @@
 <a id="mail" style="display:none" href="mailto:superchao.wc@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">superchao.wc@alibaba-inc.com</a>
 <a id="mail-c" style="display:none" href="mailto:zhenggang.czg@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">zhenggang.czg@alibaba-inc.com</a>
 <a id="mail-s" style="display:none" href="mailto:shipeng.sp@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">shipeng.sp@alibaba-inc.com</a>
+<a id="mail-gyl1" style="display:none" href="mailto:yanqiang.yyq@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">yanqiang.yyq@alibaba-inc.com</a>
+<a id="mail-gyl2" style="display:none" href="mailto:mengq@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">mengq@alibaba-inc.com</a>
+<a id="mail-gyl3" style="display:none" href="mailto:zyx@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">zyx@alibaba-inc.com</a>
+<a id="mail-gyl4" style="display:none" href="mailto:huanglitao.hlt@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">huanglitao.hlt@alibaba-inc.com</a>
+<a id="mail-gyl5" style="display:none" href="mailto:qinbo.qqb@alibaba-inc.com?subject=阿里巴巴-银泰商业笔试题回复">qinbo.qqb@alibaba-inc.com</a>
 ，方便的话在boss直聘上再回复一下，感谢您的配合。 <br>
 
 <br><b>FQA</b><br>
@@ -55,10 +60,8 @@
   }
   var owner = getParam("o");
   var node = document.getElementById('mail');
-  if (owner == 'c') {
-    document.getElementById('mail-c').style.display = "inline";
-  } else if (owner == 's') {
-    document.getElementById('mail-s').style.display = "inline";
+  if (owner != null) {
+    document.getElementById('mail-' + owner).style.display = "inline";
   } else {
     document.getElementById('mail').style.display = "inline";
   }
